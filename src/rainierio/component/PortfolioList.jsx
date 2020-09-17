@@ -24,7 +24,6 @@ class PortfolioList extends Component {
     const { column, styevariation } = this.props;
     const { portfolios } = this.state
     const list = portfolios && portfolios.slice(0, this.props.item);
-    const image = process.env.PUBLIC_URL + "/portfolio/";
 
     return (
       <React.Fragment>
@@ -36,7 +35,7 @@ class PortfolioList extends Component {
                   <div
                     className={`thumbnail`}
                     style={{
-                      backgroundImage: `url(${image}${value.image[0]})`,
+                      backgroundImage: `url(${value.image[0]})`,
                     }}></div>
                   <div className={`bg-blr-image`}></div>
                 </div>

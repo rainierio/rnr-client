@@ -82,12 +82,7 @@ class PortfolioDetailPage extends Component {
                     {/* Start big image */}
                     <div className='portfolio-thumb-inner'>
                       <div className='thumb-image rounded'>
-                        <img
-                          src={
-                            process.env.PUBLIC_URL + "/portfolio/" + showImage
-                          }
-                          alt='Portfolio Images'
-                        />
+                        <img src={showImage} alt='Portfolio Images' />
                       </div>
                     </div>
                     {/* End big image */}
@@ -102,14 +97,7 @@ class PortfolioDetailPage extends Component {
                                 <div className='portfolio-static'>
                                   <div className='thumbnail'>
                                     <a onClick={() => this.setShowImage(img)}>
-                                      <img
-                                        src={
-                                          process.env.PUBLIC_URL +
-                                          "/portfolio/" +
-                                          img
-                                        }
-                                        alt='Portfolio Images'
-                                      />
+                                      <img src={img} alt='Portfolio Images' />
                                     </a>
                                   </div>
                                 </div>

@@ -29,7 +29,6 @@ class BlogPage extends Component {
 
   render() {
     const { blogs } = this.state;
-    const image = process.env.PUBLIC_URL + "/blogs/";
     const blogPost =
       blogs &&
       blogs.map((post) => (
@@ -39,8 +38,8 @@ class BlogPage extends Component {
               <div className='blog-thumbnail'>
                 <Image
                   width={300}
-                  src={image + post.header_img}
-                  alt='About Images'
+                  src={post.header_img}
+                  alt=''
                   fluid
                   rounded
                 />

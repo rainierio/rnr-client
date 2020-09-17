@@ -38,7 +38,6 @@ class BlogDetailPage extends Component {
 
   render() {
     const { blogDetail } = this.state;
-    const image = process.env.PUBLIC_URL + "/blogs/";
     return (
       <React.Fragment>
         <PageHelmet pageTitle='Blog Details' />
@@ -56,13 +55,13 @@ class BlogDetailPage extends Component {
             <div className='row'>
               <div className='col-lg-13'>
                 <div className='inner-wrapper'>
-                <div className='blog-single-list-wrapper'>
-                  <h3 className='title'>{blogDetail.title}</h3>
-                </div>
+                  <div className='blog-single-list-wrapper'>
+                    <h3 className='title'>{blogDetail.title}</h3>
+                  </div>
                   <div className='inner'>
                     <div className='thumbnail'>
                       <Image
-                        src={image + blogDetail.header_img}
+                        src={blogDetail.header_img}
                         alt='Blog Images'
                         fluid
                         rounded
@@ -71,7 +70,8 @@ class BlogDetailPage extends Component {
                   </div>
                   <div className='blog-single-list-wrapper'>
                     <div className='mt--40'>
-                      <div className='content'
+                      <div
+                        className='content'
                         dangerouslySetInnerHTML={this.createMarkup(
                           blogDetail.content
                         )}
