@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "http://rainierio.co",
-  "proxy": "http://localhost:5000",
+  "proxy": "http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/:5000",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
