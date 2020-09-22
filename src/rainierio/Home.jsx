@@ -86,8 +86,8 @@ const Home = () => {
                     {aboutDesc.aboutdesc ? (
                       <p className='description'>{aboutDesc.aboutdesc}</p>
                     ) : (
-                      ""
-                    )}
+                        ""
+                      )}
                     {value.buttonText ? (
                       <div className='slide-btn'>
                         <a className='rn-btn' href={`${value.buttonLink}`}>
@@ -95,8 +95,8 @@ const Home = () => {
                         </a>
                       </div>
                     ) : (
-                      ""
-                    )}
+                        ""
+                      )}
                   </div>
                 </div>
               </div>
@@ -225,8 +225,6 @@ const Home = () => {
                           <img
                             className='w-100'
                             src={
-                              process.env.PUBLIC_URL +
-                              "/blogs/" +
                               value.header_img
                             }
                             alt='Blog Images'
