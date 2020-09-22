@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "http://rainierio.co",
   "proxy": "http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/",
-  "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",
