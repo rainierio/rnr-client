@@ -59,13 +59,10 @@ class BlogDetailPage extends Component {
                     <h3 className='title'>{blogDetail.title}</h3>
                   </div>
                   <div className='inner'>
-                    <div className='thumbnail'>
-                      <Image
-                        src={blogDetail.header_img}
-                        alt='Blog Images'
-                        fluid
-                        rounded
-                      />
+                    <div className='portfolio-thumb-inner'>
+                      <div className='thumb-image rounded'>
+                        <img src={blogDetail.header_img} alt='Blog Images' />
+                      </div>
                     </div>
                   </div>
                   <div className='blog-single-list-wrapper'>

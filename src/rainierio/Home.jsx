@@ -77,8 +77,8 @@ const Home = () => {
                       Hi, I’m Rainier
                       <br />
                       <TextLoop fade={true} noWrap={true}>
+                        <span> Software Engineer</span>
                         <span> Web Developer</span>
-                        <span> Technical Advisor</span>
                         <span> Freelancer </span>
                       </TextLoop>{" "}
                     </h1>
