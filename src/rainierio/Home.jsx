@@ -84,7 +84,7 @@ const Home = () => {
                     </h1>
                     <h2>Based in Canberra</h2>
                     {aboutDesc.aboutdesc ? (
-                      <p className='description'>{aboutDesc.aboutdesc}</p>
+                      <p className='description pl--0 pr--0'>{aboutDesc.aboutdesc}</p>
                     ) : (
                         ""
                       )}

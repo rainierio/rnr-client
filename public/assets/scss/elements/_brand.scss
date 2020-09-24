@@ -89,7 +89,7 @@ ul {
       transition: 0.3s;
       max-height: 110px;
       max-width: 150px;
-      padding-left: 30px;
+      padding: 10px 10px;
       cursor: pointer;
       @media #{$sm-layout} {
         max-height: 60px;
@@ -101,6 +101,7 @@ ul {
       @media #{$large-mobile} {
         max-height: initial;
         max-width: 100%;
+        padding: 0px 0px;
       }
       &:hover {
         transform: scale(1.1);

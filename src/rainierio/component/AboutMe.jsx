@@ -46,11 +46,10 @@ class AboutMe extends Component {
       this.state.work.map((wrk) => (
         <li>
           <a>
-            {wrk.title}
-            <span> - {wrk.company}</span>
+            {wrk.title} - {wrk.company}
           </a>{" "}
-          {wrk.jobdesc} <br />
-          <a>
+          <div style={{textAlign:"initial"}}>{wrk.jobdesc}</div>
+          <a style={{fontStyle:"normal", fontWeight:"bolder"}}>
             {wrk.location}, <Moment format='MMM YYYY'>{wrk.fromdate}</Moment> -
             <Moment format='MMM YYYY'>{wrk.todate}</Moment>
           </a>
@@ -62,8 +61,7 @@ class AboutMe extends Component {
       this.state.projects.map((prj) => (
         <li>
           <a>
-            {prj.projectname}
-            <span>- {prj.company}</span>
+            {prj.projectname} - {prj.company}
           </a>{" "}
           {prj.projectdetail} <br />{" "}
           <Moment format='MMM YYYY'>{prj.projectdate}</Moment>
@@ -75,8 +73,7 @@ class AboutMe extends Component {
       this.state.educations.map((edu) => (
         <li>
           <a>
-            {edu.title}
-            <span> - {edu.institution}</span>
+            {edu.title} - {edu.institution}
           </a>{" "}
           {edu.location}, <Moment format='MMM YYYY'>{edu.fromdate}</Moment> -
           <Moment format='MMM YYYY'>{edu.todate}</Moment>
@@ -92,9 +89,9 @@ class AboutMe extends Component {
       unique.map((cat) => {
         let skillItem = this.state.skills.map((skill) => {
           if (skill.category === cat) {
-            return skill.skillname + " ";
+            return skill.skillname + ", ";
           }
-          return null
+          return null;
         });
         return (
           <li>
