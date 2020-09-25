@@ -12,6 +12,7 @@ import PortfolioList from "./component/PortfolioList";
 import HomeServiceList from "./component/HomeServiceList";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
+import mainImages from '../../public/assets/images/about/designer-avatar.png'; 
 
 const SlideList = [
   {
@@ -65,8 +66,8 @@ const Home = () => {
                 <div className='col-lg-5'>
                   <div className='designer-thumbnail'>
                     <img
-                      src='/assets/images/about/designer-avatar.png'
-                      alt='Slider Images'
+                      src={mainImages}
+                      alt='mainimage'
                     />
                   </div>
                 </div>

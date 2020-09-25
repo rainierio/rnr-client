@@ -46,7 +46,7 @@ Blog Styles
   .content {
     position: absolute;
     bottom: -92px;
-    width: 100%;
+    width: 110%;
     padding: 50px 35px;
     z-index: 3;
     @extend %transition;
@@ -62,7 +62,7 @@ Blog Styles
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #000000 70%);
       left: 0;
       top: 0;
-      width: 100%;
+      width: 90%;
       height: 100%;
       opacity: 1;
       @extend %transition;

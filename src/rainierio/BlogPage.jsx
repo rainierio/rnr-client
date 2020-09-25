@@ -35,9 +35,12 @@ class BlogPage extends Component {
         <div className='row align-items-center'>
           <div className='blog-list col-lg-11'>
             <Link to={"/blogdetail/" + post._id}>
-              <div className='portfolio-thumb-inner'>
-                <img src={post.header_img} alt='Portfolio Images' />
+              <div className='blog-thumbnail'>
+                <div className='thumb-image rounded'>
+                  <img src={post.header_img} alt='Portfolio Images' />
+                </div>
               </div>
+
               <h4 className='title'>{post.title}</h4>
             </Link>
             <p className='text-justify'>{post.content + "..."}</p>

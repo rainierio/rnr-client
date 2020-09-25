@@ -30,8 +30,9 @@ class PortfolioPage extends Component {
                     <div className='text-center service-style--3 mb--30 mb_sm--0'>
                       <h2 className='title'>All Portfolios</h2>
                       <p className='description'>
-                        There are many variations of passages of Lorem Ipsum
-                        available, but the majority have suffered alteration.
+                        This is a small collection of work that I have done
+                        using different technologies. You also may check list of
+                        my involved project in about page.
                       </p>
                     </div>
                   </div>

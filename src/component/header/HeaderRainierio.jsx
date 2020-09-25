@@ -8,6 +8,7 @@ import {
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from "react-scrollspy";
 import { NavLink } from "react-router-dom";
+import logo from '../../../public/assets/images/logo/logo-symbol-dark.png'
 
 const SocialShare = [
   {
@@ -66,7 +67,8 @@ class HeaderThree extends Component {
     }
     const { color = "default-color" } = this.props;
     let logoUrl = (
-      <img src='/assets/images/logo/logo-symbol-dark.png' alt='Digital Agency' />
+      
+      <img src={logo} alt="main logo"/>
     );
 
     return (
