@@ -36,7 +36,7 @@ class BlogPage extends Component {
           <div className='blog-list col-lg-11'>
             <Link to={"/blogdetail/" + post._id}>
               <div className='blog-thumbnail'>
-                <div className='thumb-image rounded'>
+                <div className='thumb-image'>
                   <img src={post.header_img} alt='Portfolio Images' />
                 </div>
               </div>
