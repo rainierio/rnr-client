@@ -33,6 +33,23 @@ class PortfolioDetailPage extends Component {
 
   render() {
     const { portfolio, showImage } = this.state;
+    
+    if (!portfolio || !showImage) {
+      return (
+        <React.Fragment>
+          <div id='portfolio'>
+            <PageHelmet pageTitle='Portfolio Details' />
+
+            {/* Start Header Area  */}
+            <Header
+              headerPosition='header--static'
+              logo='symbol-dark'
+              color='color-black'
+            />
+          </div>
+        </React.Fragment>
+      );
+    }
 
     return (
       <React.Fragment>

@@ -55,6 +55,10 @@ class BlogPage extends Component {
         </div>
       ));
 
+    if (!blogs) {
+      return <div></div>;
+    }
+
     return (
       <React.Fragment>
         <PageHelmet pageTitle='Blog' />

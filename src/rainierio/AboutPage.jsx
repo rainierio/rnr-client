@@ -24,6 +24,7 @@ class AboutPage extends Component {
       <div style="text-align: center;">I am originally from Indonesia recently moved with family to Australia to catch our dreams. I've also been working in the hospitality industry in Canberra for over the past year and stop working in April 2020 as the result of the global pandemic impact on the hospitality industry. Eventually, it led me back to working in the IT industry and recently started a freelance job whilst looking for a company to grow together. You can check my updated resume here if you are here to hire me. :)</div>
       </div>`,
     };
+
     return (
       <React.Fragment>
         <div id='about'>

@@ -38,6 +38,24 @@ class BlogDetailPage extends Component {
 
   render() {
     const { blogDetail } = this.state;
+
+    if (blogDetail.length < 1) {
+      return (
+        <React.Fragment>
+          <div id='portfolio'>
+            <PageHelmet pageTitle='Portfolio Details' />
+
+            {/* Start Header Area  */}
+            <Header
+              headerPosition='header--static'
+              logo='symbol-dark'
+              color='color-black'
+            />
+          </div>
+        </React.Fragment>
+      );
+    }
+    
     return (
       <React.Fragment>
         <PageHelmet pageTitle='Blog Details' />

@@ -12,7 +12,7 @@ import PortfolioList from "./component/PortfolioList";
 import HomeServiceList from "./component/HomeServiceList";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
-import mainImages from '../../public/assets/images/about/designer-avatar.png'; 
+import mainImages from "../../public/assets/images/about/designer-avatar.png";
 
 const SlideList = [
   {
@@ -45,6 +45,19 @@ const Home = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  if (!aboutDesc || blogList.length < 1) {
+    return (
+      <div id='home'>
+        <Helmet pageTitle='Home' />
+        <Header
+          headerPosition='header--static'
+          logo='symbol-dark'
+          color='color-black'
+        />
+      </div>
+    );
+  }
+
   return (
     <div id='home'>
       <Helmet pageTitle='Home' />
@@ -65,10 +78,7 @@ const Home = () => {
               <div className='row align-items-center'>
                 <div className='col-lg-5'>
                   <div className='designer-thumbnail'>
-                    <img
-                      src={mainImages}
-                      alt='mainimage'
-                    />
+                    <img src={mainImages} alt='mainimage' />
                   </div>
                 </div>
                 <div className='col-lg-7 mt_md--40 mt_sm--40'>
@@ -85,10 +95,12 @@ const Home = () => {
                     </h1>
                     <h2>Based in Canberra</h2>
                     {aboutDesc.aboutdesc ? (
-                      <p className='description pl--0 pr--0'>{aboutDesc.aboutdesc}</p>
+                      <p className='description pl--0 pr--0'>
+                        {aboutDesc.aboutdesc}
+                      </p>
                     ) : (
-                        ""
-                      )}
+                      ""
+                    )}
                     {value.buttonText ? (
                       <div className='slide-btn'>
                         <a className='rn-btn' href={`${value.buttonLink}`}>
@@ -96,8 +108,8 @@ const Home = () => {
                         </a>
                       </div>
                     ) : (
-                        ""
-                      )}
+                      ""
+                    )}
                   </div>
                 </div>
               </div>
@@ -225,9 +237,7 @@ const Home = () => {
                         <a>
                           <img
                             className='w-100'
-                            src={
-                              value.header_img
-                            }
+                            src={value.header_img}
                             alt='Blog Images'
                           />
                         </a>

@@ -22,8 +22,12 @@ class PortfolioList extends Component {
   }
   render() {
     const { column, styevariation } = this.props;
-    const { portfolios } = this.state
+    const { portfolios } = this.state;
     const list = portfolios && portfolios.slice(0, this.props.item);
+
+    if (!portfolios) {
+      return <div></div>;
+    }
 
     return (
       <React.Fragment>
