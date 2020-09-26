@@ -18,7 +18,7 @@ class HomeServiceList extends Component {
         <div className='row'>
           {ServiceContent.map((val) => (
             <div className={`${column}`} key={val._id}>
-              <NavLink to={`/servicedetail/${val._id}`}>
+              {/* <NavLink to={`/servicedetail/${val._id}`}> */}
                 <a>
                   <div className='service service__style--2'>
                     <div className='icon'>{Icon(val.icon)}</div>
@@ -28,7 +28,7 @@ class HomeServiceList extends Component {
                     </div>
                   </div>
                 </a>
-              </NavLink>
+              {/* </NavLink> */}
             </div>
           ))}
         </div>
