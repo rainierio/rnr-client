@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
+import Helmet from "../component/common/Helmet";
 import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/HeaderRainierio";
 import FooterRainierio from "../component/footer/FooterRainierio";
-import Image from "react-bootstrap/Image";
+import Loading from "./component/loading";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -55,8 +56,18 @@ class BlogPage extends Component {
         </div>
       ));
 
-    if (!blogs) {
-      return <div></div>;
+    if (blogs < 1) {
+      return (
+        <div id='home'>
+          <Helmet pageTitle='Blog' />
+          <Header
+            headerPosition='header--static'
+            logo='symbol-dark'
+            color='color-black'
+          />
+          <Loading />
+        </div>
+      );
     }
 
     return (

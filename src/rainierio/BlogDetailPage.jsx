@@ -4,7 +4,7 @@ import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/HeaderRainierio";
 import FooterRainierio from "../component/footer/FooterRainierio";
-import Image from "react-bootstrap/Image";
+import Loading from "./component/loading";
 import axios from "axios";
 
 class BlogDetailPage extends Component {
@@ -51,6 +51,7 @@ class BlogDetailPage extends Component {
               logo='symbol-dark'
               color='color-black'
             />
+            <Loading />
           </div>
         </React.Fragment>
       );

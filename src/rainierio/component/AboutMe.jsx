@@ -48,8 +48,8 @@ class AboutMe extends Component {
           <a>
             {wrk.title} - {wrk.company}
           </a>{" "}
-          <div style={{textAlign:"initial"}}>{wrk.jobdesc}</div>
-          <a style={{fontStyle:"normal", fontWeight:"bolder"}}>
+          <div style={{ textAlign: "initial" }}>{wrk.jobdesc}</div>
+          <a style={{ fontStyle: "normal", fontWeight: "bolder" }}>
             {wrk.location}, <Moment format='MMM YYYY'>{wrk.fromdate}</Moment> -
             <Moment format='MMM YYYY'>{wrk.todate}</Moment>
           </a>

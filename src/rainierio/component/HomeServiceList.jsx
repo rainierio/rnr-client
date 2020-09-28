@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import * as Feather from "react-icons/fi";
 
 const Icon = (icon) => {

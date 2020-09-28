@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import ScrollToTop from "react-scroll-up";
+import Loading from "./component/loading";
 import TextLoop from "react-text-loop";
 import UsedTechnology from "./component/UsedTechnology";
 import FooterRainierio from "../component/footer/FooterRainierio";
@@ -54,6 +55,7 @@ const Home = () => {
           logo='symbol-dark'
           color='color-black'
         />
+        <Loading />
       </div>
     );
   }

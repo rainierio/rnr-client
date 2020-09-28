@@ -7,6 +7,7 @@ import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/HeaderRainierio";
 import FooterRainierio from "../component/footer/FooterRainierio";
 import axios from "axios";
+import Loading from "./component/loading";
 
 class PortfolioDetailPage extends Component {
   state = {
@@ -46,6 +47,7 @@ class PortfolioDetailPage extends Component {
               logo='symbol-dark'
               color='color-black'
             />
+            <Loading />
           </div>
         </React.Fragment>
       );

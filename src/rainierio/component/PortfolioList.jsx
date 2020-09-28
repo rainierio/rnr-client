@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
+import Loading from "./loading";
 
 class PortfolioList extends Component {
   constructor(props) {
@@ -25,8 +26,12 @@ class PortfolioList extends Component {
     const { portfolios } = this.state;
     const list = portfolios && portfolios.slice(0, this.props.item);
 
-    if (!portfolios) {
-      return <div></div>;
+    if (portfolios < 1) {
+      return (
+        <div id='home'>
+          <Loading />
+        </div>
+      );
     }
 
     return (
