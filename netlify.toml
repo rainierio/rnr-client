@@ -12,8 +12,5 @@ base = "/"
     [redirects.headers]
         X-From = "Netlify"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
 
   
