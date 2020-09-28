@@ -3,14 +3,12 @@ command = "npm run build"
 publish="/build"
 base = "/"
 
-# API proxying
 [[redirects]]
-    from = "/api/*"
-    to = "http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/:splat"
-    status = 200
-    force = true
-    [redirects.headers]
-        X-From = "Netlify"
+  from = "/api"
+  to = "http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
 
 
   
