@@ -26,7 +26,7 @@ class PortfolioList extends Component {
     const { portfolios } = this.state;
     const list = portfolios && portfolios.slice(0, this.props.item);
 
-    if (portfolios < 1) {
+    if (portfolios.length < 1) {
       return (
         <div id='home'>
           <Loading />
