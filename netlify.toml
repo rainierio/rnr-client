@@ -4,7 +4,7 @@ publish="/build"
 base = "/"
 
 [[redirects]]
-  from = "/api"
+  from = "https://angry-edison-14fb5f.netlify.app/"
   to = "http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/"
   status = 200
   force = true # COMMENT: ensure that we always redirect
