@@ -4,13 +4,6 @@ publish="/build"
 base = "/"
 
 [[redirects]]
-  from = "*/api/*"
-  to = "http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/:splat"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-
-[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
