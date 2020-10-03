@@ -79,6 +79,7 @@
     "resolve": "1.10.0",
     "sass-loader": "^7.3.1",
     "semver": "6.0.0",
+    "serve": "^11.3.2",
     "slick-carousel": "^1.8.1",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "^1.4.5",
@@ -90,6 +91,7 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "scripts": {
+    "serve": "serve -s build",
     "start": "node scripts/start.js",
     "build": "GENERATE_SOURCEMAP=false node scripts/build.js",
     "test": "node scripts/test.js"
