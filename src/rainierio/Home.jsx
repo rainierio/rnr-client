@@ -46,7 +46,8 @@ const Home = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  if (!aboutDesc || blogList.length < 1) {
+  //if (!aboutDesc || blogList.length < 1) {
+  if (!aboutDesc || !blogList) {
     return (
       <div id='home'>
         <Helmet pageTitle='Home' />
