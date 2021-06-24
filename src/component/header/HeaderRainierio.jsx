@@ -8,7 +8,7 @@ import {
 import { FiX, FiMenu } from "react-icons/fi";
 import Scrollspy from "react-scrollspy";
 import { NavLink } from "react-router-dom";
-import logo from '../../assets/images/about/designer-avatar.png'
+import logo from '../../assets/images/logo/logo-symbol-dark.png'
 
 const SocialShare = [
   {
