@@ -13,7 +13,7 @@ import PortfolioList from "./component/PortfolioList";
 import HomeServiceList from "./component/HomeServiceList";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
-import mainImages from "../../public/assets/images/about/designer-avatar.png";
+import mainImages from "../assets/images/about/designer-avatar.png";
 
 const SlideList = [
   {
