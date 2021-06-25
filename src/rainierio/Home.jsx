@@ -37,16 +37,16 @@ const Home = () => {
   const [serviceList, setServiceList] = useState([]);
   useEffect(() => {
     axios
-      .get("/api/client/homelanding")
+      //.get("/api/client/homelanding")
+      .get("http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/homelanding")
       .then((res) => {
         setBlogList(res.data.blog);
         setAboutDesc(res.data.about[0]);
-        setServiceList(res.data.services);
+        setServiceList(res.data.services);          
       })
       .catch((err) => console.log(err));
   }, []);
 
-  //if (!aboutDesc || blogList.length < 1) {
   if (!aboutDesc || !blogList) {
     return (
       <div id='home'>

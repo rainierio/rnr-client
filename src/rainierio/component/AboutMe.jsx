@@ -16,19 +16,18 @@ class AboutMe extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get("/api/client/aboutme")
-      .then((res) => {
-        this.setState({
-          skills: res.data.skills,
-          work: res.data.about[0].work.sort(
-            (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
-          ),
-          projects: res.data.about[0].project,
-          educations: res.data.about[0].education.sort(
-            (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
-          ),
-        });
+    axios.get("http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/aboutme").then((res) => {
+        const about = res.data.about[0]
+          this.setState({
+            skills: res.data.skills,
+            work: about.work.sort(
+              (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
+            ),
+            projects: about.project,
+            educations: about.education.sort(
+              (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
+            ),
+          });
       })
       .catch((err) => console.log(err));
   }

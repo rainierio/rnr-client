@@ -22,7 +22,7 @@ class BlogDetailPage extends Component {
 
   componentDidMount() {
     axios
-      .get(`/api/client/blogdetail/${this.props.match.params.id}`)
+      .get(`http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/blogdetail/${this.props.match.params.id}`)
       .then((res) => {
         this.setState({
           blogDetail: res.data,
