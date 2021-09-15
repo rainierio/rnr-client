@@ -13,7 +13,7 @@ class ServiceDetailPage extends Component {
 
   componentDidMount() {
     axios
-      .get(`http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/servicedetail/${this.props.match.params.id}`)
+      .get(`http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com/api/client/servicedetail/${this.props.match.params.id}`)
       .then((res) => {
         this.setState({
           serviceContent: res.data.services,

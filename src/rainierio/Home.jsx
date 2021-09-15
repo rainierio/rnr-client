@@ -38,7 +38,7 @@ const Home = () => {
   useEffect(() => {
     axios
       //.get("/api/client/homelanding")
-      .get("http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/homelanding")
+      .get("http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com/api/client/homelanding")
       .then((res) => {
         setBlogList(res.data.blog);
         setAboutDesc(res.data.about[0]);

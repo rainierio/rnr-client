@@ -13,7 +13,7 @@ class PortfolioList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/portfolios")
+      .get("http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com/api/client/portfolios")
       .then((res) => {
         this.setState({
           portfolios: res.data,

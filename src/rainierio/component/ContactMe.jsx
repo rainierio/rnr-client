@@ -8,7 +8,7 @@ const ContactMe = (props) => {
   const [response, setResponse] = useState("");
 
   const submitForm = (formData) => {
-    Axios.post("http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/contactform", formData)
+    Axios.post("http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com/api/client/contactform", formData)
       .then((res) => {
         setResponse("success");
         reset();

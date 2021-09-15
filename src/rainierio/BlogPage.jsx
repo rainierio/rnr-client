@@ -19,7 +19,7 @@ class BlogPage extends Component {
 
   componentDidMount() {
     axios
-      .get("http://origin.eba-awajfifh.ap-southeast-2.elasticbeanstalk.com/api/client/blogs")
+      .get("http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com/api/client/blogs")
       .then((res) => {
         this.setState({
           blogs: res.data,
