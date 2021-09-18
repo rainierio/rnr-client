@@ -1,0 +1,29 @@
+image: node:8.9.0
+
+before_script:
+  - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+  - npm install
+
+stages:
+  - test
+  - deploy
+
+# Job 1:
+.lint:
+  stage: test
+  script:
+    - npm run lint
+
+# Job 2:
+.test:
+  stage: test
+  script:
+    - npm run test
+
+deployToAWS:
+  only:
+    - master
+  stage: deploy
+  script:
+    - npm run build
+    - bash deploy/deploy.sh
