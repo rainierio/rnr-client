@@ -3,7 +3,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com//',
+      target: 'http://52.64.117.130/',
       changeOrigin: true,
     })
   );

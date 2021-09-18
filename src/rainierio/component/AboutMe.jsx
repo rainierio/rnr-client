@@ -16,7 +16,7 @@ class AboutMe extends Component {
   }
 
   componentDidMount() {
-    axios.get("http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com/api/client/aboutme").then((res) => {
+    axios.get("/api/client/aboutme").then((res) => {
         const about = res.data.about[0]
           this.setState({
             skills: res.data.skills,

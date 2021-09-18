@@ -37,8 +37,7 @@ const Home = () => {
   const [serviceList, setServiceList] = useState([]);
   useEffect(() => {
     axios
-      .get("/api/client/homelanding")
-      //.get("http://rainierioapi-env-2.eba-zgumuuwf.ap-southeast-2.elasticbeanstalk.com/api/client/homelanding")
+      .get(`/api/client/homelanding`)
       .then((res) => {
         setBlogList(res.data.blog);
         setAboutDesc(res.data.about[0]);

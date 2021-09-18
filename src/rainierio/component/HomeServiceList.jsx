@@ -17,16 +17,15 @@ class HomeServiceList extends Component {
         <div className='row'>
           {ServiceContent.map((val) => (
             <div className={`${column}`} key={val._id}>
-              {/* <NavLink to={`/servicedetail/${val._id}`}> */}
-                <a>
-                  <div className='service service__style--2'>
-                    <div className='icon'>{Icon(val.icon)}</div>
-                    <div className='content'>   
-                      <h3 className='title'>{val.title}</h3>
-                      <p>{val.introdesc}</p>
-                    </div>
+              <a>
+                <div className='service service__style--2'>
+                  <div className='icon'>{Icon(val.icon)}</div>
+                  <div className='content'>
+                    <h3 className='title'>{val.title}</h3>
+                    <p>{val.introdesc}</p>
                   </div>
-                </a>
+                </div>
+              </a>
               {/* </NavLink> */}
             </div>
           ))}
