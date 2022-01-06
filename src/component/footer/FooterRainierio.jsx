@@ -25,7 +25,7 @@ class FooterRainierio extends Component {
               <div className='col-lg-6'>
                 <div className='footer-left'>
                   <div className='inner'>
-                    <span>Is there anything i can do to help you ?</span>
+                    <span>Antying can I help?</span>
                     <h2>
                       Let's get <br /> the things done
                     </h2>
