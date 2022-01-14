@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
+import axios from '../../utility/axios'
 import Loading from "./loading";
 
 class PortfolioList extends Component {

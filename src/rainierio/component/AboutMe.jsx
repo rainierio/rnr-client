@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Moment from "react-moment";
-import axios from "axios";
+import axios from '../../utility/axios'
 
 class AboutMe extends Component {
   constructor(props) {

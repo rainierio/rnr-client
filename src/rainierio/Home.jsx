@@ -36,7 +36,6 @@ const Home = () => {
   const [aboutDesc, setAboutDesc] = useState({});
   const [serviceList, setServiceList] = useState([]);
   useEffect(() => {
-    console.log(process.env);
     axios
       .get(`/api/client/homelanding`)
       .then((res) => {
