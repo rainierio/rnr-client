@@ -12,7 +12,7 @@ import Helmet from "../component/common/Helmet";
 import PortfolioList from "./component/PortfolioList";
 import HomeServiceList from "./component/HomeServiceList";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
+import axios from '../utility/axios'
 import mainImages from "../assets/images/about/designer-avatar.png";
 
 const SlideList = [
@@ -36,6 +36,7 @@ const Home = () => {
   const [aboutDesc, setAboutDesc] = useState({});
   const [serviceList, setServiceList] = useState([]);
   useEffect(() => {
+    console.log(process.env);
     axios
       .get(`/api/client/homelanding`)
       .then((res) => {

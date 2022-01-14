@@ -6,7 +6,7 @@ import ScrollToTop from "react-scroll-up";
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/HeaderRainierio";
 import FooterRainierio from "../component/footer/FooterRainierio";
-import axios from "axios";
+import axios from '../utility/axios'
 import Loading from "./component/loading";
 
 class PortfolioDetailPage extends Component {

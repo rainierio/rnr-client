@@ -5,7 +5,7 @@ import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/HeaderRainierio";
 import FooterRainierio from "../component/footer/FooterRainierio";
 import Loading from "./component/loading";
-import axios from "axios";
+import axios from '../utility/axios'
 
 class BlogDetailPage extends Component {
   constructor(props) {

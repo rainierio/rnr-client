@@ -7,7 +7,7 @@ import Header from "../component/header/HeaderRainierio";
 import FooterRainierio from "../component/footer/FooterRainierio";
 import Loading from "./component/loading";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import axios from '../utility/axios'
 
 class BlogPage extends Component {
   constructor(props) {
