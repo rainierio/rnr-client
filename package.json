@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "homepage": "http://rainierio.co",
+    "proxy": "http://3.13.224.4",
     "dependencies": {
         "@babel/core": "7.4.3",
         "@svgr/webpack": "4.1.0",
