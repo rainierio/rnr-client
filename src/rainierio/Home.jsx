@@ -28,7 +28,7 @@ const SlideList = [
 const AboutMeText = {
   title: "About Me",
   description:
-    "Hi there, I'm Rainier. I am a self-employed software and web engineer currently dedicated my self to learning Javascript for client-server web architectures. Get to know",
+    "Hi there, I'm Rainier. I am a self-employed software and web engineer based in Jakarta, I am a huge fan of Javascript and its Ecosystem and I do remote works.",
 };
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
       .then((res) => {
         setBlogList(res.data.blog);
         setAboutDesc(res.data.about[0]);
-        setServiceList(res.data.services);          
+        setServiceList(res.data.services);
       })
       .catch((err) => console.log(err));
   }, []);
@@ -95,7 +95,7 @@ const Home = () => {
                         <span> Freelancer </span>
                       </TextLoop>{" "}
                     </h1>
-                    <h2>Based in Canberra</h2>
+                    <h2>Based in Jakarta</h2>
                     {aboutDesc.aboutdesc ? (
                       <p className='description pl--0 pr--0'>
                         {aboutDesc.aboutdesc}
@@ -133,7 +133,7 @@ const Home = () => {
                       <h2 className='title'>{AboutMeText.title}</h2>
                       <p className='description'>
                         {AboutMeText.description}{" "}
-                        <NavLink to='aboutpage'>More...</NavLink>
+                        <NavLink to='aboutpage'>Get to know more!</NavLink>
                       </p>
                     </div>
                     <div className='row mt--30'>
@@ -184,9 +184,7 @@ const Home = () => {
                   <div className='section-title text-center service-style--3 mb--30 mb_sm--0'>
                     <h2 className='title'>Latest Project</h2>
                     <p>
-                      This is a small collection of work that I have done using
-                      different technologies. You also may check list of my
-                      involved project in about page.
+                      A small gallery of recent projects.
                     </p>
                   </div>
                 </div>

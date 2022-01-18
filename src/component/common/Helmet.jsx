@@ -6,8 +6,8 @@ class PageHelmet extends Component{
         return(
             <React.Fragment>
                 <Helmet>
-                    <title>{this.props.pageTitle} || Rainierio.co </title>
-                    <meta name="rainierio.co" content="Rainier Letidjawa personal web" />
+                    <title>{this.props.pageTitle} || Rainier Letidjawa </title>
+                    <meta name="rainierio.dev" content="Rainier Letidjawa personal web" />
                 </Helmet>
             </React.Fragment>
         )

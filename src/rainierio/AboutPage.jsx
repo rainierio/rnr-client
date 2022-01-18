@@ -17,11 +17,11 @@ class AboutPage extends Component {
     const AboutMeText = {
       title: "About Me",
       description: `<div>
-      <div style="text-align: center;">Hi there, I'm Rainier, and now you are reading about me. I am a self-employed software and web engineer currently dedicated my self to learning Javascript for client-server web architectures.</div>
+      <div style="text-align: center;">Hi there, I'm Rainier, and now you are reading about me. I am a self-employed software and web engineer currently dedicated my self to works more on Javascript for client-server web architectures.</div>
       <div style="text-align: center;">&nbsp;</div>
-      <div style="text-align: center;">After obtaining my Bachelor's Degree in Information System, I started my professional careers by working at Silverlake group, one of the most significant Banking and Financial solutions and services provider in the Asia Pacific region.</div>
+      <div style="text-align: center;">After obtaining my Bachelor's Degree in Information Systems, I started my professional career by working at Silverlake group, one of the most significant Core Banking Systems and financial technology providers in the Asia Pacific region.</div>
       <div style="text-align: center;">&nbsp;</div>
-      <div style="text-align: center;">I am originally from Indonesia recently moved with family to Australia to catch our dreams. I've also been working in the hospitality industry in Canberra for over the past year and stop working in April 2020 as the result of the global pandemic impact on the hospitality industry. Eventually, it led me back to working in the IT industry and recently started a freelance job whilst looking for a company to grow together. You can check my updated resume here if you are here to hire me. :)</div>
+      <div style="text-align: center;"> I am doing freelance work based in Jakarta, but I do work remotely for an international client. You can check on my updated resume if you are here to hire me. :)</div>
       </div>`,
     };
 

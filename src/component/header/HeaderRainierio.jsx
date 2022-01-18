@@ -96,7 +96,7 @@ class HeaderThree extends Component {
                 </li>
                 <li>
                   <NavLink to='/portfoliopage' activeClassName='selected'>
-                    portfolio
+                    Portfolio
                   </NavLink>
                 </li>
                 <li>
