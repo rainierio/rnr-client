@@ -3,7 +3,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://3.13.224.4/',
+      target: 'https://rainierio-api-svc.online/',
       changeOrigin: true,
     })
   );

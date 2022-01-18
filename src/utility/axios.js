@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const instance = axios.create({ baseURL: 'http://3.13.224.4/', withCredentials: false });
+const instance = axios.create({ baseURL: 'https://rainierio-api-svc.online/', withCredentials: false });
 
 export default instance
