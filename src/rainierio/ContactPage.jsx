@@ -40,7 +40,7 @@ class ContactPage extends Component {
                     <div className='inner'>
                       <h4 className='title'>Contact With Phone Number</h4>
                       <p>
-                        <a>+0468 849 168</a>
+                        <a>+61493178215 (Whatsapp)</a>
                       </p>
                     </div>
                   </div>
@@ -56,7 +56,7 @@ class ContactPage extends Component {
                     <div className='inner'>
                       <h4 className='title'>Email Address</h4>
                       <p>
-                        <a href='mailto:info@rainierio.co'>info@rainierio.co</a>
+                        <a href='mailto:rainierletidjawa@gmail.com'>rainierletidjawa@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -72,9 +72,9 @@ class ContactPage extends Component {
                     <div className='inner'>
                       <h4 className='title'>Location</h4>
                       <p>
-                        {`Holder, 
-                        Australian Capital Teritory 2611.
-                        Australia`}
+                        {`Jakarta, 
+                        Indonesia.
+                        `}
                       </p>
                     </div>
                   </div>
