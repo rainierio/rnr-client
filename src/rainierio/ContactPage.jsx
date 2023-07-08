@@ -56,7 +56,7 @@ class ContactPage extends Component {
                     <div className='inner'>
                       <h4 className='title'>Email Address</h4>
                       <p>
-                        <a href='mailto:rainierletidjawa@gmail.com'>rainierletidjawa@gmail.com</a>
+                        <a href='mailto:rainierletidjawa@gmail.com'>info@rainierio.dev</a>
                       </p>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ class ContactPage extends Component {
                       <FiMapPin />
                     </div>
                     <div className='inner'>
-                      <h4 className='title'>Location</h4>
+                      <h4 className='title'>Current location</h4>
                       <p>
                         {`Jakarta, 
                         Indonesia.

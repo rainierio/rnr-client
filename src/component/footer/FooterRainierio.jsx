@@ -1,9 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import {
-  FaTwitter,
-  FaInstagram,
-  FaFacebookF,
+  FaGithub,
   FaLinkedinIn,
 } from "react-icons/fa";
 import { GiSelfLove } from "react-icons/gi";
@@ -11,9 +9,7 @@ import { NavLink } from "react-router-dom";
 
 const SocialShare = [
     { Social: <FaLinkedinIn />, link: "https://www.linkedin.com/in/rainier-letidjawa/" },
-    { Social: <FaInstagram />, link: "https://www.instagram.com/rainierio" },
-    { Social: <FaTwitter />, link: "https://twitter.com/rainierio" },
-    { Social: <FaFacebookF />, link: "https://www.facebook.com/rainier.letidjawa/" },
+    { Social: <FaGithub />, link: "https://github.com/rainierio" },
 ];
 class FooterRainierio extends Component {
   render() {
@@ -25,9 +21,9 @@ class FooterRainierio extends Component {
               <div className='col-lg-6'>
                 <div className='footer-left'>
                   <div className='inner'>
-                    <span>Anything can I help?</span>
+                    <span>Hey there, need a hand with anything?</span>
                     <h2>
-                      Let's get <br /> the things done
+                      Let's get <br /> the things done!
                     </h2>
                     <NavLink to='/contactpage'>
                       <a className='rn-button-style--2' href>
@@ -81,7 +77,7 @@ class FooterRainierio extends Component {
                         <h4>Say Hello</h4>
                         <ul className='ft-link'>
                           <li>
-                            <a href='mailto:info@rainierio.co'>info@rainierio.co</a>
+                            <a href='mailto:info@rainierio.co'>info@rainierio.dev</a>
                           </li>
                         </ul>
 
@@ -101,7 +97,7 @@ class FooterRainierio extends Component {
                     <div className='col-lg-12'>
                       <div className='copyright-text'>
                         <p>
-                          Crafted with {<GiSelfLove />} by Rainier Letidjawa{" "}
+                          Crafted with {<GiSelfLove />} by rainierio{" "}
                         </p>
                       </div>
                     </div>

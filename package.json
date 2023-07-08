@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "homepage": "http://rainierio.dev",
-    "proxy": "http://localhost:5000/",
+    "proxy": "https://rnr-server.vercel.app",
     "dependencies": {
         "@babel/core": "7.4.3",
         "@svgr/webpack": "4.1.0",
