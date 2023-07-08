@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Moment from "react-moment";
-import axios from '../../utility/axios'
+import axios from "../../utility/axios";
 
 class AboutMe extends Component {
   constructor(props) {
@@ -16,18 +16,20 @@ class AboutMe extends Component {
   }
 
   componentDidMount() {
-    axios.get("/api/client/aboutme").then((res) => {
-        const about = res.data.about[0]
-          this.setState({
-            skills: res.data.skills,
-            work: about.work.sort(
-              (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
-            ),
-            projects: about.project,
-            educations: about.education.sort(
-              (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
-            ),
-          });
+    axios
+      .get("/api/client/aboutme")
+      .then((res) => {
+        const about = res.data.about[0];
+        this.setState({
+          skills: res.data.skills,
+          work: about.work.sort(
+            (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
+          ),
+          projects: about.project,
+          educations: about.education.sort(
+            (a, b) => b.fromdate.substr(0, 4) - a.fromdate.substr(0, 4)
+          ),
+        });
       })
       .catch((err) => console.log(err));
   }
@@ -49,8 +51,12 @@ class AboutMe extends Component {
           </a>{" "}
           <div style={{ textAlign: "initial" }}>{wrk.jobdesc}</div>
           <a style={{ fontStyle: "normal", fontWeight: "bolder" }}>
-            {wrk.location}, <Moment format='MMM YYYY'>{wrk.fromdate}</Moment> -
-            <Moment format='MMM YYYY'>{wrk.todate}</Moment>
+            {wrk.location}, <Moment format="MMM YYYY">{wrk.fromdate}</Moment> -{" "}
+            {wrk.todate !== "Current" ? (
+              <Moment format="MMM YYYY">{wrk.todate}</Moment>
+            ) : (
+              "Current"
+            )}
           </a>
         </li>
       ));
@@ -63,7 +69,7 @@ class AboutMe extends Component {
             {prj.projectname} - {prj.company}
           </a>{" "}
           {prj.projectdetail} <br />{" "}
-          <Moment format='MMM YYYY'>{prj.projectdate}</Moment>
+          <Moment format="MMM YYYY">{prj.projectdate}</Moment>
         </li>
       ));
 
@@ -74,8 +80,8 @@ class AboutMe extends Component {
           <a>
             {edu.title} - {edu.institution}
           </a>{" "}
-          {edu.location}, <Moment format='MMM YYYY'>{edu.fromdate}</Moment> -
-          <Moment format='MMM YYYY'>{edu.todate}</Moment>
+          {edu.location}, <Moment format="MMM YYYY">{edu.fromdate}</Moment> -
+          <Moment format="MMM YYYY">{edu.todate}</Moment>
         </li>
       ));
 
@@ -103,10 +109,10 @@ class AboutMe extends Component {
     return (
       <div>
         {/* Start Tabs Area */}
-        <div className='tabs-area'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-lg-12'>
+        <div className="tabs-area">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
                 <Tabs>
                   <TabList className={`${tabStyle}`}>
                     <Tab>{tab1}</Tab>
@@ -117,28 +123,28 @@ class AboutMe extends Component {
 
                   {/* start skills tab */}
                   <TabPanel>
-                    <div className='single-tab-content'>
+                    <div className="single-tab-content">
                       <ul>{skillTab}</ul>
                     </div>
                   </TabPanel>
 
                   {/* start works tab */}
                   <TabPanel>
-                    <div className='single-tab-content'>
+                    <div className="single-tab-content">
                       <ul>{projectTab}</ul>
                     </div>
                   </TabPanel>
 
                   {/* start projects tab */}
                   <TabPanel>
-                    <div className='single-tab-content'>
+                    <div className="single-tab-content">
                       <ul>{workTab}</ul>
                     </div>
                   </TabPanel>
 
                   {/* start educations tab */}
                   <TabPanel>
-                    <div className='single-tab-content'>
+                    <div className="single-tab-content">
                       <ul>{educationTab}</ul>
                     </div>
                   </TabPanel>
