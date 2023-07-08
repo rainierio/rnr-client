@@ -91,8 +91,8 @@ const Home = () => {
                       <br />
                       <TextLoop fade={true} noWrap={true}>
                         <span> IBM i / AS400 Engineer</span>
-                        <span> Full-stack Web Developer</span>
-                        <span> Freelancer </span>
+                        <span> Full-stack Web Dev</span>
+                        <span> Freelancer</span>
                       </TextLoop>{" "}
                     </h1>
                     <h2>Based in Jakarta</h2>
