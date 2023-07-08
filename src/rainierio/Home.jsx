@@ -28,7 +28,7 @@ const SlideList = [
 const AboutMeText = {
   title: "About Me",
   description:
-    "Hi there, I'm Rainier. I am a self-employed software and web engineer based in Jakarta, I am a huge fan of Javascript and its Ecosystem and I do remote works.",
+    "Hi there, I'm Rainier! I am a full-stack web developer and IBM i/AS400 engineer based in Jakarta. I'm a huge fan of IBM i and JavaScript, and I also do remote work",
 };
 
 const Home = () => {
@@ -90,8 +90,8 @@ const Home = () => {
                       Hi, I’m Rainier
                       <br />
                       <TextLoop fade={true} noWrap={true}>
-                        <span> Software Engineer</span>
-                        <span> Web Developer</span>
+                        <span> IBM i / AS400 Engineer</span>
+                        <span> Full-stack Web Developer</span>
                         <span> Freelancer </span>
                       </TextLoop>{" "}
                     </h1>
